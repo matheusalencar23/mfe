@@ -41,6 +41,10 @@ testem.log
 .DS_Store
 Thumbs.db
 
+node_modules/
+package-lock.json
+yarn.lock
+
 */package-lock.json
 */yarn.lock
 */node_modules

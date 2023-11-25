@@ -1,0 +1,19 @@
+{
+  "name": "mfe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "(cd mfe-host && npm install); (cd mfe-1 && npm install); (cd mfe-2 && npm install)",
+    "start": "run-p start:host start:1 start:2",
+    "start:host": "cd mfe-host && npm start",
+    "start:1": "cd mfe-1 && npm start",
+    "start:2": "cd mfe-2 && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}

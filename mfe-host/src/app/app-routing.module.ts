@@ -21,6 +21,11 @@ const APP_ROUTES: Routes = [
         exposedModule: './Module',
       }).then((m) => m.AppModule),
   },
+  {
+    path: '',
+    redirectTo: 'mfe-1',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
